@@ -38,7 +38,7 @@ footer{
 footer .lista-redes{
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 20px;
     padding-left: 0;
 }
 
