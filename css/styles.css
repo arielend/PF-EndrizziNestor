@@ -59,6 +59,10 @@ footer .lista-redes .icono-redes:hover{
 
 /* Estilos aplicados al header */
 
+header{
+    margin-top: 10px;
+}
+
 .header-top{
     display: flex;
     flex-flow: row nowrap;
