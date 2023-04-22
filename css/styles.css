@@ -38,13 +38,13 @@ footer{
 footer .lista-redes{
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 35px;
     padding-left: 0;
 }
 
 @media (min-width: 764px){
     footer .lista-redes{
-        gap: 30px;        
+        gap: 25px;        
     }
 }
 
