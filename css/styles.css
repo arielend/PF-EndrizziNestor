@@ -83,6 +83,24 @@ footer .lista-redes .icono-redes:hover{
 .menu-lista{
     display: flex;
     flex-direction: column !important;
+    width: 100%;
+}
+
+@media (min-width: 576px){
+    .menu-lista{        
+        display: flex;
+        flex-direction: row !important;
+        justify-content:center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (min-width:768px){
+    .menu-lista{        
+        gap: 30px;
+    }
+
 }
 
 .menu-lista li a:hover{
@@ -94,8 +112,15 @@ footer .lista-redes .icono-redes:hover{
     height: 20px;
 }
 
+/* media queries para ocultar barras en menu mobile / mostrar en table - desktop */
 @media (max-width: 575px){
     .pink-bar{
         display: none;
+    }
+}
+
+@media (min-width: 576px){
+    .pink-bar{
+        display: inline;
     }
 }
