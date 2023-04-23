@@ -268,3 +268,34 @@ header{
     left: -400px;
     opacity: 0;
 }
+
+/* ESTILOS APLICADOS EN GALERIA */
+
+.galeria-container{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 90%;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;    
+}
+
+.galeria-container .photo-card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+    max-width: 600px;
+
+    border: solid 2px #7A5CCC;
+    box-shadow: inset 0 0 10px #7A5CCC, 0 0 10px #7A5CCC;
+    text-align: center;
+    
+}
+
+.galeria-container .photo-card .photo-img{
+    max-width: 90%;
+    margin: 10px;
+}
