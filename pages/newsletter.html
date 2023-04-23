@@ -16,7 +16,7 @@
 
     <link rel="shortcut icon" href="../img/favicon4.png" type="image/x-icon">
 
-    <title>Biografia</title>
+    <title>Suscribete</title>
 </head>
 
 <body>
@@ -83,8 +83,73 @@
 
     </header>
 
+    <!-- <main class="d-flex row gap-2 justify-content-center align-content-center pt-2 pb-2 galeria-container"> -->
     <main>
-        <h1 class="text-center">NEWSLETTER</h1>
+
+        <h1 class="text-center">SUSCRIBETE AL NEWSLETTER</h1>
+
+        <form class="d-flex row justify-content-center pink-border col-8 container-all" action="">
+
+            <!-- Modal confirmar suscripción -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+              <div class="modal-dialog">
+
+                <div class="modal-content purple-bg-color pink-border">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CONFIRMAR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <h2>¿Confirma la suscripción a nuestro Newsletter?</h2>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="boton" data-bs-dismiss="modal">CERRAR</button>
+                    <button type="submit" class="boton">CONFIRMAR</input>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+            <div class="form-register col-11 col-md-10 col-lg-8 pt-3 pb-3">
+  
+              <div class="form-field">                        
+                <input type="text" name="apellido-y-nombres" id="apellido-y-nombres" autofocus class="form-input">
+                <label for="apellido-y-nombres" class="form-label">APELLIDO Y NOMBRES</label>
+              </div>
+  
+              <div class="form-field">
+                <input type="email" name="correo-electronico" id="correo-electronico" class="form-input">
+                <label for="correo-electronico" class="form-label">E-MAIL</label>
+              </div>
+  
+              <div class="form-field">
+                <input type="tel" name="telefono" id="telefono" class="form-input">
+                <label for="telefono" class="form-label">TELEFONO</label>
+              </div>                    
+  
+              <div class="form-field">
+                <label for="mensaje" class="form-label">MENSAJE</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-textarea"></textarea>                        
+              </div>
+  
+              <div class="form-field">
+                <input type="reset" class="boton" value="BORRAR">
+                <input type="button" class="boton" value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              </div>
+    
+            <div>
+  
+          </form>
+
+
     </main>
 
     <footer>
