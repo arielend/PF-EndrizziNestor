@@ -444,3 +444,10 @@ header{
 #index-poster-img{
     width:100%;
 }
+
+/* ESTILOS APLICADOS A BIOGRAFIA */
+
+.img-coming-soon{
+    width: 900px;
+    margin: 0 auto;
+}
