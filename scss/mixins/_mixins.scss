@@ -1,0 +1,81 @@
+@mixin flex-center{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between-center{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-col-between-center{
+    display: flex;
+    flex-direction: column !important;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-around-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-col-around-center{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-evenly-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-col-evenly-center{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-evenly-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+@mixin flex-col-evenly-start{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+@mixin flex-col-start-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin m-10-auto{
+    margin: 1rem auto;
+}
+
+@mixin m-15-auto{
+    margin: 1.5rem auto;
+}
+
+@mixin m-20-auto{
+    margin: 2rem auto;
+}
