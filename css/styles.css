@@ -499,9 +499,9 @@ footer .disclaimer h6 {
 }
 .contenedor__bloque-bio {
   margin: 2rem auto;
+  padding: 2rem;
   background: #25367c;
   border: solid 0.1rem #FFA2F3;
-  height: 60rem;
   width: 90vw;
 }
 .contenedor__bloque-bio__photo {
@@ -509,9 +509,13 @@ footer .disclaimer h6 {
 }
 .contenedor__bloque-bio__subtitulo {
   color: #FFA2F3;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .contenedor__bloque-bio__parrafo {
   color: #FFA2F3;
+  font-size: 2rem;
+  text-align: justify;
 }
 
 .contenedor__titulo {

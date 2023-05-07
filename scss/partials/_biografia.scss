@@ -10,9 +10,9 @@
 
     &__bloque-bio{
         @include m-20-auto;
+        padding: 2rem;
         background: $blue;
         border: solid .1rem $pink;
-        height: 60rem;
         width: 90vw;
 
         &__photo{
@@ -21,10 +21,14 @@
 
         &__subtitulo{
             color: $pink;
+            font-size: 2.5rem;
+            font-weight: bold;
         }
 
         &__parrafo{
             color: $pink;
+            font-size: 2rem;
+            text-align: justify;
         }
     }
 }
