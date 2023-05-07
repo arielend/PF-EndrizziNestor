@@ -1,5 +1,5 @@
 
-main{
+/* main{
     margin: 30px auto 20px;
     padding: 20px;
 }
@@ -14,11 +14,11 @@ main{
 .go-top-icon:hover{
     transform: rotate(360deg);
     transition: 900ms;
-}
+} */
 
 /* Estilos aplicados al footer */
 
-footer{
+/* footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,6 @@ footer{
 
     margin-top: 25px;
     margin-bottom: 25px;
-
     padding: 5px 0px;
 }
 
@@ -52,11 +51,11 @@ footer .lista-redes .icono-redes{
 footer .lista-redes .icono-redes:hover{
     transform: translateY(-3px);
     filter:drop-shadow(2px 2px 5px white);
-}
+} */
 
 /* Estilos aplicados al header */
 
-header{
+/* header{
     margin-top: 10px;
 }
 
@@ -116,10 +115,10 @@ header{
 
 .pink-bar{
     height: 20px;
-}
+} */
 
 /* media queries para ocultar barras en menu mobile / mostrar en table - desktop */
-@media (max-width: 575px){
+/* @media (max-width: 575px){
     .pink-bar{
         display: none;
     }
@@ -129,7 +128,7 @@ header{
     .pink-bar{
         display: inline;
     }
-}
+} */
 
 /* Estilos aplicados en discografia */
 
@@ -165,8 +164,7 @@ header{
 
 .box:hover{
     transform: translate(5px, -5px);
-    box-shadow: -10px 10px 20px -10px rgb(255, 162, 243);
-    
+    box-shadow: -10px 10px 20px -10px rgb(255, 162, 243);    
 }
 
 .box .icon,
@@ -253,11 +251,12 @@ header{
 
 .galeria-container{
     display:flex;
-    flex-flow: row wrap;
-    max-width: 90%;
-    margin: 100px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;    
+    max-width: 90%;
+    margin: 100px auto;
 }
 
 .galeria-container .photo-card{
@@ -314,7 +313,6 @@ header{
 }
 
 .form-input{  
-    /* background-color: #7A5CCC; */
     background-color: transparent;
     color:white;
     text-transform: uppercase;
@@ -329,7 +327,6 @@ header{
 }
 
 .form-textarea{  
-    /* background-color: #7A5CCC;    */
     background-color: transparent;
     color:white;
     text-transform: uppercase; 

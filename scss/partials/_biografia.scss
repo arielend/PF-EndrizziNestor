@@ -1,2 +1,30 @@
 @import '../mixins/mixins';
 @import '../var/variables';
+
+.contenedor{
+
+    &__titulo{
+        color: $pink;
+        text-align: center;
+    }
+
+    &__bloque-bio{
+        @include m-20-auto;
+        background: $blue;
+        border: solid .1rem $pink;
+        height: 60rem;
+        width: 90vw;
+
+        &__photo{
+            align-self: center;
+        }
+
+        &__subtitulo{
+            color: $pink;
+        }
+
+        &__parrafo{
+            color: $pink;
+        }
+    }
+}

@@ -1,2 +1,52 @@
 @import '../mixins/mixins';
 @import '../var/variables';
+
+//Animaciones
+@keyframes acercar {
+    to{
+        scale: 1.2;
+        filter: grayscale(0);
+    }    
+}
+
+.contenedor{
+
+    &__galeria{
+        @include flex-center;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        margin: 5rem auto;        
+
+        &__card{
+            @include flex-center;
+            
+            margin: 1rem;
+            padding: 1rem;
+            max-width: 430px;
+
+            border: solid 2px #7A5CCC;
+            box-shadow: inset 0 0 10px #7A5CCC, 0 0 10px #7A5CCC;
+            text-align: center;
+
+            &__photo{
+                width: 410px;
+                max-width: 90%;
+                margin: 10px;
+                transition: all;
+
+                @media screen and (min-width: 768px) {
+                    &{
+                        filter: grayscale(1);
+                    }                    
+                }
+
+                &:hover{
+                    animation-name: acercar;
+                    animation-duration: 1.2s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,132 @@
 @import '../mixins/mixins';
 @import '../var/variables';
 
+//ANIMACIONES
+@keyframes pop-up-slide {
+    from {
+        right: 140rem;
+    }
+    to {
+        right: 25rem;
+    }
+}
+
+@keyframes pop-up-slide2{
+    from {
+        right: 180rem;        
+    }    
+    to {
+        right: 25rem;
+    }
+}
+
+@keyframes aparecer{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+//Ver el contenedor en el cual se mueve la animación
+
+.pop-up{
+    @include flex-between-center;
+    position: relative;
+    background-color: $pink;
+    color: $blue;
+    height: 5rem;
+    border-radius: 0%;
+    
+    &__anuncio-animado{
+        width: 70%;
+        position: absolute;
+        animation-name: pop-up-slide;
+        animation-duration: 5s;        
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+    
+    &__boton-cerrar{
+        position: absolute;
+        right: .5rem;
+
+        & a img{
+            width: 2rem;
+        }
+    }
+}
+
+.pop-up2{
+    @include flex-between-center;
+    position:relative;
+    background-color: $blue;
+    color: $pink;
+    height: 5rem;
+    border-radius: 0%;
+
+    &__anuncio{
+        width: 80%;
+        height: 100%;
+        position: absolute;
+                
+        animation-name: pop-up-slide;
+        animation-duration: 4s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+
+        &__span{
+            color: $pink;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btn-comprar{
+        position: absolute;
+        right: 3.5rem;
+        width:15%;
+        padding-right: 1.5rem;
+
+        &__link{
+            @include flex-center;
+            background-color: $pink;
+            color: $blue;
+            font-family: 'Jura', sans-serif;
+            font-weight: 700;
+            height: 2.2rem;
+            width: 10rem;
+            border: solid .1rem #fff;
+            border-radius: 1.1rem;
+            text-decoration: none;
+            opacity: 0;
+
+            animation-name: aparecer;
+            animation-duration: 1s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+
+            &:hover{
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+
+    &__btn-cerrar{
+        position: relative;
+        right: 1rem;
+        width:5%;
+        padding-right: 1.5rem;
+
+        &__link{
+
+            &__img{
+                width: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
 .contenedor{
 
     &__media{

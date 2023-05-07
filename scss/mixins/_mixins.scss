@@ -1,3 +1,6 @@
+//Display: flex
+
+//FLEX-DIRECTION ROW
 @mixin flex-center{
     display: flex;
     flex-direction: row;    
@@ -5,16 +8,23 @@
     align-items: center;
 }
 
-@mixin flex-between-center{
+@mixin flex-start-center{
     display: flex;
     flex-direction: row;    
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-@mixin flex-col-between-center{
+@mixin flex-end-center{
     display: flex;
-    flex-direction: column !important;    
+    flex-direction: row;    
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-between-center{
+    display: flex;
+    flex-direction: row;    
     justify-content: space-between;
     align-items: center;
 }
@@ -26,23 +36,9 @@
     align-items: center;
 }
 
-@mixin flex-col-around-center{
-    display: flex;
-    flex-direction: column !important;
-    justify-content: space-around;
-    align-items: center;
-}
-
 @mixin flex-evenly-center{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-@mixin flex-col-evenly-center{
-    display: flex;
-    flex-direction: column !important;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -53,6 +49,29 @@
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
+//FLEX-DIRECTION COLUMN
+@mixin flex-col-between-center{
+    display: flex;
+    flex-direction: column !important;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-col-around-center{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-col-evenly-center{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 @mixin flex-col-evenly-start{
     display: flex;
@@ -68,6 +87,12 @@
     align-items: center;
 }
 
+//MARGINS Y PADDING
+
+@mixin m-5-auto{
+    margin: .5rem auto;
+}
+
 @mixin m-10-auto{
     margin: 1rem auto;
 }
@@ -78,4 +103,52 @@
 
 @mixin m-20-auto{
     margin: 2rem auto;
+}
+
+@mixin p-y-10{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@mixin p-y-20{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@mixin p-y-30{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@mixin p-x-10{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@mixin p-x-20{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@mixin p-x-30{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@mixin boton{
+    background-color: #FFA2F3;
+    color: #25367c;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    margin: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+    &:hover{
+        background-color: #25367c;
+        color: white;
+        border: solid 1px #FFA2F3;
+    }
 }

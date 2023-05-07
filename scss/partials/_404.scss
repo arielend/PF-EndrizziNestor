@@ -1,0 +1,99 @@
+@import '../mixins/mixins';
+@import '../var/variables';
+
+//Animacione
+@keyframes rotacion {
+    to{
+        transform: rotate(360deg);
+    }    
+}
+
+//Sin uso actual
+@keyframes destello {
+    0%{opacity: 1;}
+    20%{opacity: .5;}
+    40%{opacity: .25;}
+    60%{opacity: .15;}
+    80%{opacity: .5;}
+    100%{opacity: .75;}    
+}
+
+.contenedor{
+
+    &__fondo{
+        @include flex-center;
+        z-index: 0;
+        position: relative;
+        height: 55vh;        
+        
+        &__img{
+            opacity: .1;
+            width: 40rem;            
+
+            animation-name: rotacion;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;            
+        }
+    }
+
+    &__frente{
+        @include flex-col-evenly-center;
+        position: absolute;
+        top: 37rem;
+        z-index: 1;
+
+        h2{
+            @include m-10-auto;
+            font-size: 2rem;
+            
+            @media screen and ($medium){
+                &{
+                    font-size: 2.5rem;
+                }
+            }
+    
+            @media screen and ($large){
+                &{
+                    font-size: 3rem;
+                }
+            }
+    
+            @media screen and ($x-large){
+                &{
+                    font-size: 3.5rem;
+                }
+            }    
+        }
+
+        h3{
+            @include m-10-auto;
+            font-size: 2.5rem;
+            font-weight: bold;
+
+            @media screen and ($medium){
+                &{
+                    font-size: 3rem;
+                }
+            }
+    
+            @media screen and ($large){
+                &{
+                    font-size: 3.5rem;
+                }
+            }
+    
+            @media screen and ($x-large){
+                &{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    &__boton-volver{
+        @include flex-center;
+        @include boton;
+        text-decoration: none;
+    }
+}
