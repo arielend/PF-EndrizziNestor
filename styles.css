@@ -36,15 +36,6 @@ h5 {
   font-size: 2.5rem;
 }
 
-ol,
-ul, dl {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .text-center {
   text-align: center;
 }
@@ -67,11 +58,9 @@ a {
 }
 
 .contenedor-fluido {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hide {
@@ -125,14 +114,9 @@ header .header-top__boton {
     display: none;
   }
 }
-header .header-top__banner {
-  width: 100%;
-}
-header .header-top__banner__link {
-  width: 100%;
-}
-header .header-top__banner__link__img {
-  width: 100%;
+header .header-top__banner a img {
+  width: 90%;
+  filter: drop-shadow(1px 1px 1px #FFA2F3);
 }
 header .header-nav {
   width: 90%;
@@ -255,8 +239,19 @@ footer .disclaimer h6 {
 }
 
 @keyframes pop-up-slide {
+  from {
+    right: 140rem;
+  }
   to {
-    right: 22rem;
+    right: 25rem;
+  }
+}
+@keyframes pop-up-slide2 {
+  from {
+    right: 180rem;
+  }
+  to {
+    right: 25rem;
   }
 }
 @keyframes aparecer {
@@ -268,52 +263,63 @@ footer .disclaimer h6 {
   }
 }
 .pop-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  background-color: #25367c;
+  background-color: #FFA2F3;
+  color: #25367c;
   height: 5rem;
   border-radius: 0%;
-  overflow: hidden;
 }
-.pop-up__anuncio {
+.pop-up__anuncio-animado {
+  width: 70%;
+  position: absolute;
+  animation-name: pop-up-slide;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.pop-up__boton-cerrar {
+  position: absolute;
+  right: 0.5rem;
+}
+.pop-up__boton-cerrar a img {
+  width: 2rem;
+}
+
+.pop-up2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  background-color: #25367c;
+  color: #FFA2F3;
+  height: 5rem;
+  border-radius: 0%;
+}
+.pop-up2__anuncio {
+  width: 80%;
+  height: 100%;
   position: absolute;
-  height: 3.3rem;
+  animation-name: pop-up-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
-@media screen and (min-width:768px) {
-  .pop-up__anuncio {
-    right: 170rem;
-    animation-name: pop-up-slide;
-    animation-duration: 4s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-  }
+.pop-up2__anuncio__span {
+  color: #FFA2F3;
+  font-size: 1.4rem;
 }
-@media screen and (min-width:992px) {
-  .pop-up__anuncio {
-    right: 210rem;
-  }
-}
-.pop-up__anuncio__img {
-  height: 1.25rem;
-}
-@media screen and (min-width:768px) {
-  .pop-up__anuncio__img {
-    height: 2rem;
-  }
-}
-.pop-up__btn-comprar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.pop-up2__btn-comprar {
   position: absolute;
-  height: 3rem;
-  right: 5rem;
+  right: 3.5rem;
+  width: 15%;
+  padding-right: 1.5rem;
 }
-.pop-up__btn-comprar__link {
+.pop-up2__btn-comprar__link {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -322,61 +328,56 @@ footer .disclaimer h6 {
   color: #25367c;
   font-family: "Jura", sans-serif;
   font-weight: 700;
-  width: 15rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  font-size: 1rem;
+  height: 2.2rem;
+  width: 10rem;
+  border: solid 0.1rem #fff;
+  border-radius: 1.1rem;
+  text-decoration: none;
   opacity: 0;
   animation-name: aparecer;
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
-.pop-up__btn-comprar__link:hover {
+.pop-up2__btn-comprar__link:hover {
   background-color: #25367c;
-  color: white;
-  border: solid 1px #FFA2F3;
+  color: #fff;
 }
-.pop-up__btn-cerrar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 1.5rem;
-  height: 3rem;
+.pop-up2__btn-cerrar {
+  position: relative;
+  right: 1rem;
+  width: 5%;
+  padding-right: 1.5rem;
 }
-.pop-up__btn-cerrar__link__img {
+.pop-up2__btn-cerrar__link__img {
   width: 2rem;
 }
 
-.media-box {
+.contenedor__media {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.media-box__poster {
+.contenedor__media__poster {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin: 2rem auto;
 }
-.media-box__poster__img {
+.contenedor__media__poster__img {
   width: 90%;
   max-width: 95vw;
 }
-.media-box__trailer {
+.contenedor__media__trailer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin: 2rem auto;
 }
-.media-box__trailer__video {
+.contenedor__media__trailer__video {
   max-width: 95vw;
 }
 
@@ -405,7 +406,7 @@ footer .disclaimer h6 {
     opacity: 0.75;
   }
 }
-.back-image {
+.contenedor__fondo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -414,7 +415,7 @@ footer .disclaimer h6 {
   position: relative;
   height: 55vh;
 }
-.back-image__img {
+.contenedor__fondo__img {
   opacity: 0.1;
   width: 40rem;
   animation-name: rotacion;
@@ -422,89 +423,71 @@ footer .disclaimer h6 {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
-.front-text {
+.contenedor__frente {
   display: flex;
   flex-direction: column !important;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  top: 28rem;
+  top: 37rem;
   z-index: 1;
 }
-@media screen and (min-width:768px) {
-  .front-text {
-    top: 30rem;
-  }
-}
-@media screen and (min-width:992px) {
-  .front-text {
-    top: 32rem;
-  }
-}
-@media screen and (min-width:1200px) {
-  .front-text {
-    top: 39rem;
-  }
-}
-.front-text h2 {
+.contenedor__frente h2 {
   margin: 1rem auto;
   font-size: 2rem;
 }
 @media screen and (min-width:768px) {
-  .front-text h2 {
+  .contenedor__frente h2 {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width:992px) {
-  .front-text h2 {
+  .contenedor__frente h2 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width:1200px) {
-  .front-text h2 {
+  .contenedor__frente h2 {
     font-size: 3.5rem;
   }
 }
-.front-text h3 {
+.contenedor__frente h3 {
   margin: 1rem auto;
   font-size: 2.5rem;
   font-weight: bold;
 }
 @media screen and (min-width:768px) {
-  .front-text h3 {
+  .contenedor__frente h3 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width:992px) {
-  .front-text h3 {
+  .contenedor__frente h3 {
     font-size: 3.5rem;
   }
 }
 @media screen and (min-width:1200px) {
-  .front-text h3 {
+  .contenedor__frente h3 {
     font-size: 4rem;
   }
 }
-
-.boton-volver {
+.contenedor__boton-volver {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #FFA2F3;
   color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
   width: 15rem;
   height: 2.5rem;
   border: none;
   border-radius: 2rem;
   margin: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   text-decoration: none;
 }
-.boton-volver:hover {
+.contenedor__boton-volver:hover {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
@@ -519,21 +502,19 @@ footer .disclaimer h6 {
   padding: 2rem;
   background: #25367c;
   border: solid 0.1rem #FFA2F3;
-  width: 85vw;
+  width: 90vw;
 }
 .contenedor__bloque-bio__photo {
   align-self: center;
 }
 .contenedor__bloque-bio__subtitulo {
-  font-family: "Open Sans", sans-serif;
   color: #FFA2F3;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 .contenedor__bloque-bio__parrafo {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  font-size: 1.6rem;
+  color: #FFA2F3;
+  font-size: 2rem;
   text-align: justify;
 }
 
@@ -719,13 +700,12 @@ footer .disclaimer h6 {
 .contenedor__modal__dialogo__box__footer__boton {
   background-color: #FFA2F3;
   color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
   width: 15rem;
   height: 2.5rem;
   border: none;
   border-radius: 2rem;
   margin: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 .contenedor__modal__dialogo__box__footer__boton:hover {
@@ -824,13 +804,12 @@ footer .disclaimer h6 {
 .contenedor__formulario__footer__boton {
   background-color: #FFA2F3;
   color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
   width: 15rem;
   height: 2.5rem;
   border: none;
   border-radius: 2rem;
   margin: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 .contenedor__formulario__footer__boton:hover {

@@ -18,82 +18,99 @@
     100%{opacity: .75;}    
 }
 
-.contenedor{
 
-    &__fondo{
-        @include flex-center;
-        z-index: 0;
-        position: relative;
-        height: 55vh;        
+
+.back-image{
+    @include flex-center;
+    z-index: 0;
+    position: relative;
+    height: 55vh;        
+    
+    &__img{
+        opacity: .1;
+        width: 40rem;            
+
+        animation-name: rotacion;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;            
+    }
+}
+
+.front-text{
+    @include flex-col-evenly-center;
+    position: absolute;
+    top: 28rem;
+    z-index: 1;
+
+    @media screen and ($medium){
+        &{
+            top: 30rem;
+        }
+    }
+
+    @media screen and ($large){
+        &{
+            top:32rem;
+        }
+    }
+
+    @media screen and ($x-large){
+        &{
+            top: 39rem;
+        }
+    }  
+
+    h2{
+        @include m-10-auto;
+        font-size: 2rem;
         
-        &__img{
-            opacity: .1;
-            width: 40rem;            
-
-            animation-name: rotacion;
-            animation-duration: 7s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;            
+        @media screen and ($medium){
+            &{
+                font-size: 2.5rem;
+            }
         }
+
+        @media screen and ($large){
+            &{
+                font-size: 3rem;
+            }
+        }
+
+        @media screen and ($x-large){
+            &{
+                font-size: 3.5rem;
+            }
+        }    
     }
 
-    &__frente{
-        @include flex-col-evenly-center;
-        position: absolute;
-        top: 37rem;
-        z-index: 1;
+    h3{
+        @include m-10-auto;
+        font-size: 2.5rem;
+        font-weight: bold;
 
-        h2{
-            @include m-10-auto;
-            font-size: 2rem;
-            
-            @media screen and ($medium){
-                &{
-                    font-size: 2.5rem;
-                }
+        @media screen and ($medium){
+            &{
+                font-size: 3rem;
             }
-    
-            @media screen and ($large){
-                &{
-                    font-size: 3rem;
-                }
-            }
-    
-            @media screen and ($x-large){
-                &{
-                    font-size: 3.5rem;
-                }
-            }    
         }
 
-        h3{
-            @include m-10-auto;
-            font-size: 2.5rem;
-            font-weight: bold;
+        @media screen and ($large){
+            &{
+                font-size: 3.5rem;
+            }
+        }
 
-            @media screen and ($medium){
-                &{
-                    font-size: 3rem;
-                }
-            }
-    
-            @media screen and ($large){
-                &{
-                    font-size: 3.5rem;
-                }
-            }
-    
-            @media screen and ($x-large){
-                &{
-                    font-size: 4rem;
-                }
+        @media screen and ($x-large){
+            &{
+                font-size: 4rem;
             }
         }
     }
+}
 
-    &__boton-volver{
-        @include flex-center;
-        @include boton;
-        text-decoration: none;
-    }
+.boton-volver{
+    @include flex-center;
+    @include boton;
+    text-decoration: none;
 }

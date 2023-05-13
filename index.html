@@ -9,6 +9,11 @@
     <!-- CDN Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     
+    <!-- Google Fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
     <!-- Fuente Adobe - Garamond Pro -->
     <link rel="stylesheet" href="https://use.typekit.net/sbp3cbg.css">
 
@@ -29,40 +34,19 @@
 <body>
 
     <!-- Pop-up - Pre-header -->
-    <div class="alert fade show pop-up" role="alert">
+    <div class="alert fade show pop-up">
 
-        <div class="pop-up__anuncio-animado">
-            <h4>Comprá las entradas en la página Oficial</h4>
+        <div class="pop-up__anuncio">
+            <img class="pop-up__anuncio__img" src="img/span-entradas.svg" alt="Cartel venta entradas">            
         </div>
 
-        <div class="pop-up__comprar">
-            <a href="#" class="boton">
-                Comprar
-            </a>
+        <div class="pop-up__btn-comprar">
+            <a href="#" target="_blank" class="pop-up__btn-comprar__link">COMPRAR</a>
         </div>
 
-        <div class="pop-up__boton-cerrar">
-            <a href="" class="btn-close" role="button" data-bs-dismiss="alert" aria-label="Close">
-                <img src="img/boton-cerrar.svg" alt="Cerrar">
-            </a>
-        </div>       
-        
-    </div>
-
-    <!-- Pop-up2 - Pre-header -->
-    <div class="alert fade show pop-up2">
-
-        <div class="pop-up2__anuncio">
-            <span>COMPRA TUS ENTRADAS EN LA WEB OFICIAL</span>
-        </div>
-
-        <div class="pop-up2__btn-comprar">
-            <a href="" class="pop-up2__btn-comprar__link">COMPRAR</a>
-        </div>
-
-        <div class="pop-up2__btn-cerrar">
-            <a href="" class="pop-up2__btn-cerrar__link" role="button" data-bs-dismiss="alert" aria-label="Close">
-                <img class="pop-up2__btn-cerrar__link__img" src="img/boton-cerrar-rosa.svg" alt="boton cerrar">
+        <div class="pop-up__btn-cerrar">
+            <a href="#" class="pop-up__btn-cerrar__link" role="button" data-bs-dismiss="alert" aria-label="Close">
+                <img class="pop-up__btn-cerrar__link__img" src="img/boton-cerrar-rosa.svg" alt="boton cerrar">
             </a>
         </div>
 
@@ -79,8 +63,8 @@
             </button>
     
             <div class="header-top__banner">
-                <a class="centered" href="index.html">
-                    <img id="banner-coldarg" src="img/coldplay-en-arg-header.png" alt="Banner Coldplay">
+                <a class="centered header-top__banner__link" href="index.html">
+                    <img class="header-top__banner__link__img" id="banner-coldarg" src="img/coldplay-en-arg-header.png" alt="Banner Coldplay">
                 </a>
             </div>
 
@@ -138,16 +122,39 @@
         
         <h1 class="text-center">PÁGINA TRIBUTO A COLDPLAY</h1>
 
-        <div class="contenedor__media">
+        <div class="media-box">
             
-            <div class="contenedor__media__poster">
-                <img class="contenedor__media__poster__img" src="img/mots-world-tour.webp" alt="MOTSWT Poster">
+            <div class="media-box__poster">
+                
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/carousel-photo1.webp" class="d-block w-100" alt="Foto carrusel 1">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/carousel-photo2.webp" class="d-block w-100" alt="Foto carrusel 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-photo3.webp" class="d-block w-100" alt="Foto carrusel 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
             </div>
 
             <h4 class="mt-5">Mirá el trailer del <b>Live Broadcast</b></h4>
 
-            <div class="contenedor__media__trailer">
-                <iframe class="contenedor__media__trailer__video" width="600" height="330" src="https://www.youtube.com/embed/afopvhkURQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="media-box__trailer">
+                <iframe class="media-box__trailer__video" width="600" height="330" src="https://www.youtube.com/embed/afopvhkURQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>           
 
         </div>        

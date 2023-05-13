@@ -13,21 +13,23 @@
         padding: 2rem;
         background: $blue;
         border: solid .1rem $pink;
-        width: 90vw;
+        width: 85vw;
 
         &__photo{
             align-self: center;
         }
 
         &__subtitulo{
+            font-family: 'Open Sans', sans-serif;
             color: $pink;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: bold;
         }
 
         &__parrafo{
-            color: $pink;
-            font-size: 2rem;
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            font-size: 1.6rem;
             text-align: justify;
         }
     }
