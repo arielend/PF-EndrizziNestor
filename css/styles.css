@@ -532,6 +532,7 @@ footer .disclaimer h6 {
 }
 .contenedor__bloque-bio__parrafo {
   font-family: "Open Sans", sans-serif;
+  line-height: 2;
   color: #fff;
   font-size: 1.6rem;
   text-align: justify;
