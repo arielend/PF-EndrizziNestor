@@ -53,6 +53,7 @@ ul, dl {
 }
 
 a {
+  color: #25367c;
   text-decoration: none;
 }
 
@@ -506,10 +507,6 @@ footer .disclaimer h6 {
 }
 
 .boton-volver {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #FFA2F3;
   color: #25367c;
   font-family: "Jura", sans-serif;
@@ -520,7 +517,10 @@ footer .disclaimer h6 {
   border-radius: 2rem;
   margin: 0.5rem;
   font-size: 1rem;
-  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .boton-volver:hover {
   background-color: #25367c;
@@ -528,6 +528,17 @@ footer .disclaimer h6 {
   border: solid 1px #FFA2F3;
   transition: all 0.7s;
   box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
+}
+.boton-volver:hover .boton-volver__link {
+  color: #fff;
+}
+.boton-volver__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .contenedor__titulo {
