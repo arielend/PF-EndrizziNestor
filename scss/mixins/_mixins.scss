@@ -152,6 +152,8 @@
         background-color: $blue;
         color: white;
         border: solid 1px #FFA2F3;
+        transition: all .7s;
+        box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
     }
 }
 

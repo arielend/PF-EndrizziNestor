@@ -91,17 +91,22 @@
     }
 }
 
+.carousel-img{
+    max-width: 100%;
+}
+
+.carousel-item{
+    transition: transform 2s ease !important;
+}
+
 .media-box{
     @include flex-col-start-center;
-
-    &__poster{
+    max-width: 1024px;
+        
+    &__carousel{
         @include flex-col-start-center;
         margin: 2rem auto;
-
-        &__img{
-            width: 90%;
-            max-width: 95vw;
-        }
+        
     }
 
     &__trailer{
@@ -111,6 +116,5 @@
         &__video{
             max-width: 95vw;
         }
-
     }
 }    

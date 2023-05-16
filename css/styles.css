@@ -16,10 +16,21 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom, #000000, #25367c);
-  background-repeat: no-repeat;
+  background-color: #25367c;
   font-family: "adobe-garamond-pro", serif;
   color: #FFA2F3;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 33%, rgba(0, 0, 0, 0.6) 66%, rgba(0, 0, 0, 0.8) 83%, #000 88%, #000 100%);
 }
 
 h1 {
@@ -338,6 +349,8 @@ footer .disclaimer h6 {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
+  transition: all 0.7s;
+  box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
 .pop-up__btn-cerrar {
   display: flex;
@@ -352,22 +365,27 @@ footer .disclaimer h6 {
   width: 2rem;
 }
 
+.carousel-img {
+  max-width: 100%;
+}
+
+.carousel-item {
+  transition: transform 2s ease !important;
+}
+
 .media-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  max-width: 1024px;
 }
-.media-box__poster {
+.media-box__carousel {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin: 2rem auto;
-}
-.media-box__poster__img {
-  width: 90%;
-  max-width: 95vw;
 }
 .media-box__trailer {
   display: flex;
@@ -508,6 +526,8 @@ footer .disclaimer h6 {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
+  transition: all 0.7s;
+  box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
 
 .contenedor__titulo {
@@ -846,6 +866,8 @@ footer .disclaimer h6 {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
+  transition: all 0.7s;
+  box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
 .contenedor__formulario {
   display: flex;
@@ -951,6 +973,8 @@ footer .disclaimer h6 {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
+  transition: all 0.7s;
+  box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
 
 /*# sourceMappingURL=styles.css.map */
