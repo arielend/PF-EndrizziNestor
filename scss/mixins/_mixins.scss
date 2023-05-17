@@ -1,3 +1,5 @@
+@import '../var/variables';
+
 //Display: flex
 
 //FLEX-DIRECTION ROW
@@ -135,7 +137,7 @@
     padding-right: 3rem;
 }
 
-@mixin boton{
+%boton{
     background-color: $pink;
     color: $blue;
     font-family: 'Jura', sans-serif;
@@ -147,6 +149,10 @@
     border-radius: 2rem;
     margin: .5rem;
     font-size: 1rem;
+}
+
+@mixin boton{
+    @extend %boton;
 
     &:hover{
         background-color: $blue;
@@ -160,3 +166,21 @@
 @mixin wide{
     width: 100%;
 }
+
+//CAPAS
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+//CENTRADO
+@mixin abs-centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

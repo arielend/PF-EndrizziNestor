@@ -1,90 +1,85 @@
 @import '../mixins/mixins';
 @import '../var/variables';
 
-.contenedor{
+.disco-box {
+    @include flex-center;
+    flex-wrap: wrap;
 
-    &__titulo{
-        color: $pink;
-        text-align: center;
-    }
+    &__link {
+        text-decoration: none;
 
-    &__disco-box{
-        @include flex-center;
-        flex-wrap: wrap;
-        
-        &__link{
-            text-decoration: none;
+        &__card {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 300ms;
 
-            &__card{
-                width: 400px;
-                height: 400px;
-                padding: 20px;
-                margin: 20px;
-                background-color: #fff;
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
-                transition: 300ms;
+            &:hover {
+                transform: translate(5px, -5px);
+                box-shadow: -10px 10px 20px -10px rgb(255, 162, 243);
 
-                &:hover{
-                    transform: translate(5px, -5px);
-                    box-shadow: -10px 10px 20px -10px rgb(255, 162, 243);
-
-                    .contenedor__disco-box__link__card__icon{
-                        transform: translateX(165px);
-                        opacity: 1;
-                    }
-
-                    .contenedor__disco-box__link__card__cover{
-                        top: 400px;
-                        left: -400px;
-                        opacity: 0;
-                    }
-                    
-                    h3{
-                        transform: translateY(0);
-                        font-size: 20px;
-                        color: #6b087d;
-                        opacity: 1;
-                    }
-
-                    h4{
-                        transform: translateY(0);
-                        font-size: 25px;
-                        color: #6b087d;
-                        opacity: 1;
-                    }
-
-                    p{
-                        transform: translateY(0);
-                        opacity: 1;
-                        color: #000;
-                    }
-                }
-
-                &__cover{
-                    width: 390px;
-                    height: 390px;
-                    position: absolute;
-                    top: 5px;
-                    left: 5px;
+                .disco-box__link__card__icon {
+                    transform: translateX(165px);
                     opacity: 1;
-                    transition: 2s;/* Tiempo de transición de la caratula */
                 }
 
-                &__icon{
-                    transform: translateY(100px);
-                }
-
-                &__icon,
-                h4,
-                h3,p{
-                    position: relative;
-                    z-index: 1; /* Solo funciona si la position es relative */
-                    transition: all 800ms;
+                .disco-box__link__card__cover {
+                    top: 400px;
+                    left: -400px;
                     opacity: 0;
                 }
+
+                h3 {
+                    transform: translateY(0);
+                    font-size: 20px;
+                    color: #6b087d;
+                    opacity: 1;
+                }
+
+                h4 {
+                    transform: translateY(0);
+                    font-size: 25px;
+                    color: #6b087d;
+                    opacity: 1;
+                }
+
+                p {
+                    transform: translateY(0);
+                    opacity: 1;
+                    color: #000;
+                }
+            }
+
+            &__cover {
+                width: 390px;
+                height: 390px;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                opacity: 1;
+                transition: 2s;
+                /* Tiempo de transición de la caratula */
+            }
+
+            &__icon {
+                transform: translateY(100px);
+            }
+
+            &__icon,
+            h4,
+            h3,
+            p {
+                position: relative;
+                z-index: 1;
+                /* Solo funciona si la position es relative */
+                transition: all 800ms;
+                opacity: 0;
             }
         }
     }

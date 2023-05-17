@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +22,19 @@ dl,
 ol,
 ul {
   padding: 0;
+}
+
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 html {
@@ -86,6 +112,11 @@ a {
   width: 100%;
 }
 
+.titulo {
+  color: #FFA2F3;
+  text-align: center;
+}
+
 .hide {
   display: none !important;
 }
@@ -112,6 +143,19 @@ a {
 .go-top-icon:hover {
   transform: rotate(360deg);
   transition: 900ms;
+}
+
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 header {
@@ -216,6 +260,19 @@ header .header-nav__lista__item-img__img {
   width: 0.3rem;
 }
 
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
 footer {
   margin: 1rem auto;
   display: flex;
@@ -264,6 +321,19 @@ footer .disclaimer {
 }
 footer .disclaimer h6 {
   font-size: 2rem;
+}
+
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 @keyframes pop-up-slide {
@@ -330,16 +400,6 @@ footer .disclaimer h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #FFA2F3;
-  color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  width: 15rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  font-size: 1rem;
   opacity: 0;
   animation-name: aparecer;
   animation-duration: 1s;
@@ -397,6 +457,19 @@ footer .disclaimer h6 {
 }
 .media-box__trailer__video {
   max-width: 95vw;
+}
+
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .boton-volver, .pop-up__btn-comprar__link {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 @keyframes rotacion {
@@ -507,16 +580,6 @@ footer .disclaimer h6 {
 }
 
 .boton-volver {
-  background-color: #FFA2F3;
-  color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  width: 15rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  font-size: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -541,27 +604,36 @@ footer .disclaimer h6 {
   height: 100%;
 }
 
-.contenedor__titulo {
-  color: #FFA2F3;
-  text-align: center;
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .pop-up__btn-comprar__link, .boton-volver {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
-.contenedor__bloque-bio {
+
+.bloque-bio {
   margin: 2rem auto;
   padding: 2rem;
   background: #25367c;
   border: solid 0.1rem #FFA2F3;
   width: 85vw;
 }
-.contenedor__bloque-bio__photo {
+.bloque-bio__photo {
   align-self: center;
 }
-.contenedor__bloque-bio__subtitulo {
+.bloque-bio__subtitulo {
   font-family: "Open Sans", sans-serif;
   color: #FFA2F3;
   font-size: 2.2rem;
   font-weight: bold;
 }
-.contenedor__bloque-bio__parrafo {
+.bloque-bio__parrafo {
   font-family: "Open Sans", sans-serif;
   line-height: 2;
   color: #fff;
@@ -569,21 +641,30 @@ footer .disclaimer h6 {
   text-align: justify;
 }
 
-.contenedor__titulo {
-  color: #FFA2F3;
-  text-align: center;
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .pop-up__btn-comprar__link, .boton-volver {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
-.contenedor__disco-box {
+
+.disco-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.contenedor__disco-box__link {
+.disco-box__link {
   text-decoration: none;
 }
-.contenedor__disco-box__link__card {
+.disco-box__link__card {
   width: 400px;
   height: 400px;
   padding: 20px;
@@ -595,55 +676,71 @@ footer .disclaimer h6 {
   cursor: pointer;
   transition: 300ms;
 }
-.contenedor__disco-box__link__card:hover {
+.disco-box__link__card:hover {
   transform: translate(5px, -5px);
   box-shadow: -10px 10px 20px -10px rgb(255, 162, 243);
 }
-.contenedor__disco-box__link__card:hover .contenedor__disco-box__link__card__icon {
+.disco-box__link__card:hover .disco-box__link__card__icon {
   transform: translateX(165px);
   opacity: 1;
 }
-.contenedor__disco-box__link__card:hover .contenedor__disco-box__link__card__cover {
+.disco-box__link__card:hover .disco-box__link__card__cover {
   top: 400px;
   left: -400px;
   opacity: 0;
 }
-.contenedor__disco-box__link__card:hover h3 {
+.disco-box__link__card:hover h3 {
   transform: translateY(0);
   font-size: 20px;
   color: #6b087d;
   opacity: 1;
 }
-.contenedor__disco-box__link__card:hover h4 {
+.disco-box__link__card:hover h4 {
   transform: translateY(0);
   font-size: 25px;
   color: #6b087d;
   opacity: 1;
 }
-.contenedor__disco-box__link__card:hover p {
+.disco-box__link__card:hover p {
   transform: translateY(0);
   opacity: 1;
   color: #000;
 }
-.contenedor__disco-box__link__card__cover {
+.disco-box__link__card__cover {
   width: 390px;
   height: 390px;
   position: absolute;
   top: 5px;
   left: 5px;
   opacity: 1;
-  transition: 2s; /* Tiempo de transición de la caratula */
+  transition: 2s;
+  /* Tiempo de transición de la caratula */
 }
-.contenedor__disco-box__link__card__icon {
+.disco-box__link__card__icon {
   transform: translateY(100px);
 }
-.contenedor__disco-box__link__card__icon,
-.contenedor__disco-box__link__card h4,
-.contenedor__disco-box__link__card h3, .contenedor__disco-box__link__card p {
+.disco-box__link__card__icon,
+.disco-box__link__card h4,
+.disco-box__link__card h3,
+.disco-box__link__card p {
   position: relative;
-  z-index: 1; /* Solo funciona si la position es relative */
+  z-index: 1;
+  /* Solo funciona si la position es relative */
   transition: all 800ms;
   opacity: 0;
+}
+
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .pop-up__btn-comprar__link, .boton-volver {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 @keyframes rolling-disc {
@@ -759,13 +856,26 @@ footer .disclaimer h6 {
   gap: 5rem;
 }
 
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .pop-up__btn-comprar__link, .boton-volver {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
 @keyframes acercar {
   to {
     scale: 1.2;
     filter: grayscale(0);
   }
 }
-.contenedor__galeria {
+.galeria {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -774,7 +884,7 @@ footer .disclaimer h6 {
   max-width: 100vw;
   margin: 5rem auto;
 }
-.contenedor__galeria__card {
+.galeria__card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -786,28 +896,41 @@ footer .disclaimer h6 {
   box-shadow: inset 0 0 10px #7A5CCC, 0 0 10px #7A5CCC;
   text-align: center;
 }
-.contenedor__galeria__card__photo {
+.galeria__card__photo {
   width: 410px;
   max-width: 90%;
   margin: 10px;
   transition: all;
 }
 @media screen and (min-width: 768px) {
-  .contenedor__galeria__card__photo {
+  .galeria__card__photo {
     filter: grayscale(1);
   }
 }
-.contenedor__galeria__card__photo:hover {
+.galeria__card__photo:hover {
   animation-name: acercar;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-.contenedor__modal {
+.formulario__footer__boton, .susc-modal__dialogo__box__footer__boton, .pop-up__btn-comprar__link, .boton-volver {
+  background-color: #FFA2F3;
+  color: #25367c;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.susc-modal {
   background-color: rgba(49, 57, 92, 0.7333333333);
 }
-.contenedor__modal__dialogo__box {
+.susc-modal__dialogo__box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -815,7 +938,7 @@ footer .disclaimer h6 {
   background-color: transparent;
   width: 100%;
 }
-.contenedor__modal__dialogo__box__header {
+.susc-modal__dialogo__box__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -829,14 +952,14 @@ footer .disclaimer h6 {
   background-color: #25367c;
   color: #25367c;
 }
-.contenedor__modal__dialogo__box__header__titulo {
+.susc-modal__dialogo__box__header__titulo {
   color: #FFA2F3;
 }
-.contenedor__modal__dialogo__box__header button img {
+.susc-modal__dialogo__box__header button img {
   cursor: pointer;
   width: 3rem;
 }
-.contenedor__modal__dialogo__box__body {
+.susc-modal__dialogo__box__body {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -848,7 +971,7 @@ footer .disclaimer h6 {
   border-left: solid 2px #FFA2F3;
   border-right: solid 2px #FFA2F3;
 }
-.contenedor__modal__dialogo__box__footer {
+.susc-modal__dialogo__box__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -861,26 +984,15 @@ footer .disclaimer h6 {
   height: 5rem;
   background-color: #25367c;
 }
-.contenedor__modal__dialogo__box__footer__boton {
-  background-color: #FFA2F3;
-  color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  width: 15rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  font-size: 1rem;
-}
-.contenedor__modal__dialogo__box__footer__boton:hover {
+.susc-modal__dialogo__box__footer__boton:hover {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;
   transition: all 0.7s;
   box-shadow: inset 0 0 1px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
-.contenedor__formulario {
+
+.formulario {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -890,21 +1002,21 @@ footer .disclaimer h6 {
   border: solid 1px #FFA2F3;
 }
 @media screen and (min-width:768px) {
-  .contenedor__formulario {
+  .formulario {
     width: 70vw;
   }
 }
 @media screen and (min-width:992px) {
-  .contenedor__formulario {
+  .formulario {
     width: 50vw;
   }
 }
 @media screen and (min-width:1200px) {
-  .contenedor__formulario {
+  .formulario {
     width: 30vw;
   }
 }
-.contenedor__formulario__header {
+.formulario__header {
   height: 5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -913,17 +1025,17 @@ footer .disclaimer h6 {
   justify-content: center;
   align-items: center;
 }
-.contenedor__formulario__header h4 {
+.formulario__header h4 {
   color: #FFA2F3;
 }
-.contenedor__formulario__body {
+.formulario__body {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.contenedor__formulario__body__campo {
+.formulario__body__campo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -932,7 +1044,7 @@ footer .disclaimer h6 {
   position: relative;
   width: 80%;
 }
-.contenedor__formulario__body__campo__label {
+.formulario__body__campo__label {
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
@@ -940,7 +1052,7 @@ footer .disclaimer h6 {
   left: 50%;
   transform: translateX(-50%);
 }
-.contenedor__formulario__body__campo__input {
+.formulario__body__campo__input {
   background-color: transparent;
   color: white;
   text-transform: uppercase;
@@ -950,10 +1062,10 @@ footer .disclaimer h6 {
   border: solid 1px rgb(255, 131, 239);
   padding: 1.4rem 2rem;
 }
-.contenedor__formulario__body__campo__input:focus {
+.formulario__body__campo__input:focus {
   box-shadow: inset 0 0 10px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
-.contenedor__formulario__body__campo__text-area {
+.formulario__body__campo__text-area {
   background-color: transparent;
   color: white;
   text-transform: uppercase;
@@ -961,26 +1073,14 @@ footer .disclaimer h6 {
   padding: 10px 20px;
   width: 100%;
 }
-.contenedor__formulario__body__campo__text-area:focus {
+.formulario__body__campo__text-area:focus {
   box-shadow: inset 0 0 10px rgb(255, 131, 239), 0 0 10px rgb(255, 131, 239);
 }
-.contenedor__formulario__footer {
+.formulario__footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.contenedor__formulario__footer__boton {
-  background-color: #FFA2F3;
-  color: #25367c;
-  font-family: "Jura", sans-serif;
-  font-weight: 700;
-  width: 15rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  font-size: 1rem;
-}
-.contenedor__formulario__footer__boton:hover {
+.formulario__footer__boton:hover {
   background-color: #25367c;
   color: white;
   border: solid 1px #FFA2F3;

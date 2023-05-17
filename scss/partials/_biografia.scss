@@ -1,37 +1,29 @@
 @import '../mixins/mixins';
 @import '../var/variables';
 
-.contenedor{
+.bloque-bio {
+    @include m-20-auto;
+    padding: 2rem;
+    background: $blue;
+    border: solid .1rem $pink;
+    width: 85vw;
 
-    &__titulo{
-        color: $pink;
-        text-align: center;
+    &__photo {
+        align-self: center;
     }
 
-    &__bloque-bio{
-        @include m-20-auto;
-        padding: 2rem;
-        background: $blue;
-        border: solid .1rem $pink;
-        width: 85vw;
+    &__subtitulo {
+        font-family: 'Open Sans', sans-serif;
+        color: $pink;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
 
-        &__photo{
-            align-self: center;
-        }
-
-        &__subtitulo{
-            font-family: 'Open Sans', sans-serif;
-            color: $pink;
-            font-size: 2.2rem;
-            font-weight: bold;
-        }
-
-        &__parrafo{
-            font-family: 'Open Sans', sans-serif;
-            line-height: 2;
-            color: #fff;
-            font-size: 1.6rem;
-            text-align: justify;
-        }
+    &__parrafo {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 2;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: justify;
     }
 }
